@@ -2,7 +2,7 @@
     <div class="container py-2">
         <nav aria-label="breadcrumb">
             <div class="d-flex align-items-center">
-                <span class="px-3 font-weight-bold text-lg text-white me-4">Corporate UI</span>
+                <span class="px-3 font-weight-bold text-lg text-white me-4">DashUI Cam</span>
             </div>
         </nav>
         <ul class="navbar-nav d-none d-lg-flex">
@@ -157,13 +157,13 @@
                 </a>
             </li>
             <li class="nav-item border-radius-sm px-3 py-3 me-2  d-flex align-items-center">
-                <a href="{{ route('signin') }}" class="nav-link text-white p-0">
-                    Sign In
+                <a href="{{ route('login') }}" class="nav-link text-white p-0">
+                    Login
                 </a>
             </li>
             <li class="nav-item border-radius-sm px-3 py-3 me-2  d-flex align-items-center">
-                <a href="{{ route('signup') }}" class="nav-link text-white p-0">
-                    Sign Up
+                <a href="{{ route('login') }}" class="nav-link text-white p-0">
+                    Inscription
                 </a>
             </li>
         </ul>

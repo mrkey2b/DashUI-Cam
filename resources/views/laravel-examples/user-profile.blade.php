@@ -18,7 +18,7 @@
                             <div class="row z-index-2 justify-content-center align-items-center">
                                 <div class="col-sm-auto col-4">
                                     <div class="avatar avatar-xl position-relative">
-                                        <img src="../assets/img/team-2.jpg" alt="bruce"
+                                        <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(Auth::user()->email)) }}?s=160" alt="bruce"
                                             class="w-100 h-100 object-fit-cover border-radius-lg shadow-sm"
                                             id="preview">
                                     </div>
@@ -29,7 +29,7 @@
                                             {{ auth()->user()->name }}
                                         </h5>
                                         <p class="mb-0 font-weight-bold text-sm">
-                                            CEO / Co-Founder
+                                            Admin Panel
                                         </p>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                 </div>
             </form>
         </div>
-        <x-app.footer />
+        
         </div>
     </main>
 

@@ -37,13 +37,13 @@ class LoginController extends Controller
         if (Auth::attempt($credentials, $rememberMe)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/cameras');
         }
 
 
 
         return back()->withErrors([
-            'message' => 'The provided credentials do not match our records.',
+            'message' => 'Aie.. Login/Password not found or missmatch',
         ])->withInput($request->only('email'));
     }
 
@@ -63,6 +63,6 @@ class LoginController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/sign-in');
+        return redirect('/login');
     }
 }
